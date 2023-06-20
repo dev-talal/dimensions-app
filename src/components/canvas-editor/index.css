@@ -1,0 +1,439 @@
+.editor-main-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+}
+.properties-section-wrapper{
+    height: 10%;
+    width: 100%;
+    background-color: #0077ff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.update-properties-popup{
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.dim-change{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.dim-box{
+    width: 100%;
+    margin: 10px 0;
+}
+.dim-box span{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main-btn{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn-span{
+    margin-top: 8px;
+    font-size: 19px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+.content-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*section 1 */
+.flex{
+    display: flex
+}
+.flex-Col{
+    display: flex;
+    flex-direction: column;
+}
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+
+.justify-space-btw{
+    justify-content: space-between;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+.justify-evenly{
+    justify-content: space-evenly;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.mt-10{
+    margin-top: 10px!important;
+}
+.mt-20{
+    margin-top: 20px!important;
+}
+.w-100{
+    width: 100% !important;
+}
+
+.w-200p{
+    width: 200px!important;
+}
+
+.w-10per{
+    width: 10%!important;
+}
+.w-20per{
+    width: 20%!important;
+}
+
+.w-30per{
+    width: 30%!important;
+}
+.w-60per{
+    width: 60%!important;
+}
+.w-70per{
+    width: 70%!important;
+}
+
+.width-inherit{
+    width: inherit;
+}
+
+.colors-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.drawBtn{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    width: 8rem;
+    border-radius: 4px;
+    height: 3rem;
+    font-size: 0.8rem;
+    border: 0;
+    font-weight: lighter;
+    margin: 0 5px;
+
+}
+.customBtn{
+    cursor: pointer;
+    width: 100px;
+    height: 45px;
+    background-color: #a19c9c;
+    font-size: 1rem;
+    color: white;
+    border-radius: 4px;
+    border: 0;
+    font-weight: bold;
+}
+
+.d-none{
+    display: none;
+}
+.upload-inner-wrapper{
+    height: auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 8px dotted lightgray;
+    padding: 26px;
+}
+.bottom-btns-wrapper{
+    /*position: absolute;*/
+    /*bottom: 30px;*/
+    /*left: 15px;*/
+}
+
+.uploadImgText{
+    margin-bottom: 10px;
+}
+
+.upload-img{
+    height: 100%;
+    width: 100%;
+}
+
+.drawBtnActive,
+.drawBtn:hover {
+    border-color: darkorange;
+    color: darkorange;
+}
+.customBtn:hover {
+    background-color: #343030;
+    color: #bbbbbb;
+}
+.pop-btns-wrapper{
+    width: 60%;
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+
+}
+.canvas-main-wrapper{
+    width: 100%;
+    height: 90%;
+    background-color: #3e8e41;
+}
+.main-btn-img{
+    width: 35px;
+    height: 35px;
+}
+.cancel-btn{
+    background-color: #9a9a9a;
+}
+.upload-img-popup{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    flex-direction: column;
+}
+.dimension-change-pop{
+    position: fixed;
+    top: calc(50% - 150px);
+    left: calc(50% - 200px);
+    height: auto;
+    width: 400px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    flex-direction: column;
+
+}
+.main-popup-wrapper{
+    padding: 60px 20px;
+}
+
+.label-container{
+    height: auto;
+    width: 10%;
+    border: 2px solid darkgrey;
+    border-radius: 8px;
+    margin: 0 5px;
+    background-color: #f5f5f5;
+}
+.popup-inner-wrapper{
+    width: 100%;
+}
+.cross-dim-popup{
+    position: absolute;
+    top: 5px;
+    height: max-content;
+    width: max-content;
+    right: 15px;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 0px 7px;
+    background-color: #d6d7da;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.color-box-container{
+    border: 0;
+    border-radius: 50%;
+
+}
+
+.dim-input-wrapper,
+.btn-wrapper{
+    margin: 5px 5px 5px 0;
+}
+.color-box{
+    height: 50px;
+    width: 50px;
+    margin-right:5px;
+    border: 1px solid #8b8787;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.main-popup-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inputDimension{
+    width: -webkit-fill-available;
+    border: 1px solid #7a656580;
+    font-size: 18px;
+    color: #4a4b4f;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.dim-update-range{
+    width: 100%;
+}
+
+
+
+/* Range input styling */
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #959393;
+    border-radius: 1px;
+    border: 0px solid #000000;
+}
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    height: 19px;
+    width: 20px;
+    border-radius: 25px;
+    background: black;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7.5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #959393;
+
+}
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: green;
+    border-radius: 1px;
+    border: 0px solid #000000;
+}
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    height: 19px;
+    width: 20px;
+    border-radius: 25px;
+    background: black;
+    cursor: pointer;
+}
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: red;
+    border: 0px solid #000000;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-fill-upper {
+    background: red;
+    border: 0px solid #000000;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #000000;
+    height: 19px;
+    width: 20px;
+    border-radius: 25px;
+    background: #A1D0FF;
+    cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: red;
+
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: red;
+
+}
+
+
+/*MEDIA QUERIES*/
+
+/* media queries */
+@media (max-width: 767px) {
+    .editor-main-wrapper{
+        width: 100%;
+        border-left: 0;
+        border-right: 0;
+    }
+    .drawBtn{
+        width: 5rem;
+        height: 1.8rem;
+        font-size: 0.6rem;
+    }
+    .bottom-btns-wrapper{
+        bottom: 70px;
+        left: 5px;
+    }
+
+    .upload-inner-wrapper{
+        width: 150px;
+    }
+    .btn-span{
+        font-size: 14px;
+    }
+    .main-btn-img{
+        width: 28px;
+        height: 28px;
+    }
+    .dim-box span{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
